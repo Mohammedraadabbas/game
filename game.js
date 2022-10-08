@@ -142,7 +142,7 @@ function animate() {
     let dis = Math.hypot(player.x - enemy.x, player.y - enemy.y)
     if (dis - enemy.radius - player.radius < 1) {
       var xmlhttp = new XMLHttpRequest();
-      var url = "https://mohammedraadabbas.github.io/mobgame/highscore/" + score + 
+      var url = "https://mohammedraadabbas.github.io/game/highscore/" + score + 
           "?id=" + playerid;
       xmlhttp.open("GET", url, true);
       xmlhttp.send();
